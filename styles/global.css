@@ -1,57 +1,54 @@
 .navigation {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    border: 4px inset #ffffff;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  border: 4px inset #ffffff;
 }
 
 .navigation a {
-    display: flex;
-    font-size: 20px;
-    text-decoration: none;
-    color: transparent;
-    background: linear-gradient(to bottom, darkred, darkorange);
-    background-clip: text;
+  display: flex;
+  font-size: 20px;
+  text-decoration: none;
+  color: #af6e31;
+  transition: color 1s ease;
 }
 
 .navigation a:hover {
-    color: transparent;
-    background: linear-gradient(to top, red, yellow);
-    background-clip: text;
+  color: orange;
 }
 
 .navigation div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.navigation div span {
-    font-size: 20px;
-    color: transparent;
-    background: linear-gradient(to top, red, yellow);
-    background-clip: text;
+.navigation div label {
+  font-size: 20px;
+  color: orange;
 }
-.navigation div span img {
-    width: 16px;
-    height: 16px;
+.navigation div label img {
+  width: 16px;
+  height: 4px;
 }
 
 .navigation div img {
-    height: 100%;
+  width: 32px;
+  height: 32px;
 }
 
 body {
-    border: 4px outset #ffffff;
+  border: 4px outset #ffffff;
 }
 
 * {
-    background-color: black;
-    margin: 0;
-    box-sizing: border-box;
+  background-color: black;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 img {
-    color: white;
-    display: block;
+  color: white;
+  display: block;
 }

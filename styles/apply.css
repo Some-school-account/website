@@ -1,29 +1,21 @@
 .apply {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    border: 4px white inset;
+    padding: 20%;
+}
+
+.apply form {
+    border: 8px white ridge;
     padding: 20px;
-    gap: 20px;
-    border: 4px inset white;
 }
 
-.apply > div {
-    display: flex;
-    flex-direction: row;
-    border: 4px outset white;
-}
-
-.apply img {
-    height: 100%;
-    border: 4px inset white;
-}
-
-.apply > div > div {
-    display: flex;
-    flex-direction: column;
-}
-
-.apply span {
-    border: 4px inset white;
+.apply label {
     color: white;
+}
+
+.apply input {
+    color: white;
+    background-color: black;
+    width: 100%;
+    color: white;
+    border: 8px white ridge;
 }

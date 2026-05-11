@@ -1,10 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <div class="navigation">
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/apply.css">
+        <title>HotBeans Web</title>
+        <div class = "navigation">
             <div>
-                <img src="images/favicon.svg" alt="Hot beans Icon" />
-                <span>HotBeans</span>
+                <img src="images/favicon.svg" alt="Hot beans Icon">
+                <label>HotBeans</label>
             </div>
             <a href="index.html">Home</a>
             <a href="team.html">Team</a>
@@ -12,24 +18,17 @@
             <a href="apply.html">Apply</a>
             <a href="courses.html">Courses</a>
         </div>
-        <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width = device-width, initial-scale = 1.0"
-        />
-        <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
-        <link rel="stylesheet" href="styles/global.css" />
-        <link rel="stylesheet" href="styles/apply.css" />
-        <title>HotBeans Web</title>
+
     </head>
     <body>
         <div class="apply">
-            <div>
-                <img src="images/favicon.svg" alt="Hot beans Icon" />
-                <div>
-                    <span> Bob </span>
-                </div>
-            </div>
+            <form action="/action_page.php">
+                <label for="first_name" class="apply.bob">First name:</label><br>
+                <input type="text" id="first_name" name="first_name"><br>
+                <label for="last_name">Last name:</label><br>
+                <input type="text" id="last_name" name="last_name"><br><br>
+                <input type="submit" value="Submit">
+            </form> 
         </div>
     </body>
 </html>

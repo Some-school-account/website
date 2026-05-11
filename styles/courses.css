@@ -1,0 +1,43 @@
+.courses {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    border: 4px inset white;
+}
+
+.courses > div {
+    display: flex;
+    flex-direction: column;
+    border: 4px outset white;
+}
+
+.courses div p {
+    border: 4px inset white;
+    color: white;
+    padding: 4px;
+}
+
+.w3school a {
+    color:#317531;
+}
+
+.w3school a:hover {
+    color:#009a68;;
+}
+
+.w3school div label {
+    color: #009a68;;
+}
+
+.udemy a {
+    color:#8940b9;
+}
+
+.udemy a:hover {
+    color:#a635f1;
+}
+
+.udemy div label {
+    color: #a635f1;
+}
