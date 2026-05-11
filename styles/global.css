@@ -10,12 +10,15 @@
     display: flex;
     font-size: 20px;
     text-decoration: none;
-    background: blue;
-    -webkit-background-clip: text;
+    color: transparent;
+    background: linear-gradient(to bottom, darkred, darkorange);
+    background-clip: text;
 }
 
 .navigation a:hover {
-    color: orange;
+    color: transparent;
+    background: linear-gradient(to top, red, yellow);
+    background-clip: text;
 }
 
 .navigation div {
@@ -25,16 +28,16 @@
 
 .navigation div span {
     font-size: 20px;
-    color: orange;
+    color: transparent;
+    background: linear-gradient(to top, red, yellow);
+    background-clip: text;
 }
 .navigation div span img {
-    color: gray;
     width: 16px;
     height: 16px;
 }
 
 .navigation div img {
-    display: block;
     height: 100%;
 }
 
@@ -45,6 +48,10 @@ body {
 * {
     background-color: black;
     margin: 0;
-    text-indent: 0;
     box-sizing: border-box;
+}
+
+img {
+    color: white;
+    display: block;
 }
