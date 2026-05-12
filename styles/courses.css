@@ -1,4 +1,4 @@
-.courses {
+main {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -6,38 +6,58 @@
     border: 4px inset white;
 }
 
-.courses > div {
+article {
     display: flex;
     flex-direction: column;
     border: 4px outset white;
+    transition: border-color ease 1s;
+    border-color: white var(--theme) white var(--theme);
+    --theme: #af6e31;
 }
 
-.courses div p {
+nav {
+    transition: border-color ease 1s;
+    border-color: white var(--theme) white var(--theme);
+}
+
+nav a {
+    color: var(--theme);
+}
+
+nav a:hover {
+    color: var(--theme);
+}
+
+p {
     border: 4px inset white;
+    transition: border-color ease 1s;
+    border-color: white var(--theme) white var(--theme);
     color: white;
     padding: 4px;
 }
 
-.w3school a {
-    color: #317531;
+.w3school {
+    --theme: #317531;
+}
+.w3school nav a {
+    --theme: #317531;
+}
+.w3school:hover {
+    --theme: #009a68;
+}
+.w3school nav a:hover {
+    --theme: #009a68;
 }
 
-.w3school a:hover {
-    color: #009a68;
+.udemy {
+    --theme: #691d9c;
 }
-
-.w3school div label {
-    color: #009a68;
+.udemy nav a {
+    --theme: #691d9c;
 }
-
-.udemy a {
-    color: #8940b9;
+.udemy:hover {
+    --theme: #a635f1;
 }
-
-.udemy a:hover {
-    color: #a635f1;
-}
-
-.udemy div label {
-    color: #a635f1;
+.udemy nav a:hover {
+    --theme: #a635f1;
 }

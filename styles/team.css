@@ -1,32 +1,41 @@
-.employees {
+main {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-around;
     padding: 20px;
     gap: 20px;
-    border: 4px inset #ffffff;
+    border: 4px inset;
 }
 
-.employees div {
+article {
     display: flex;
     flex-direction: column;
-    border: 4px outset #ffffff;
     width: 400px;
-    transition: transform 0.4s ease;
+    border: 4px outset;
 }
 
-.employees div:hover {
-    transform: scale(1.01);
+article img {
+    border: 4px inset;
+    transition: border-color ease 1s;
 }
 
-.employees img {
-    border: 4px inset #ffffff;
-}
-
-.employees span {
+p {
     height: 100%;
     padding: 4px;
     word-wrap: break-word;
-    border: 4px inset #ffffff;
+    border: 4px inset;
+}
+
+article,
+article img,
+p {
+    transition: border-color ease 1s;
+    border-color: white #af6e31 white #af6e31;
+}
+
+article:hover,
+article:hover img,
+article:hover p {
+    border-color: white orange white orange;
 }

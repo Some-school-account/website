@@ -1,44 +1,46 @@
+main {
+    display: flex;
+    flex-direction: column;
+    border: 4px inset #ffffff;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    border: 4px outset;
+    transition: border-color ease 1s;
+    border-color: white var(--theme) white var(--theme);
+    --theme: #af6e31;
+}
+
+h2 {
+    padding: 4px;
+    color: #ffffff;
+    border: 4px inset;
+    transition: border-color ease 1s;
+    border-color: white var(--theme) white var(--theme);
+}
+
+section {
+    padding: 8px;
+    color: #ffffff;
+    word-wrap: break-word;
+    border: 4px inset;
+    transition: border-color ease 1s;
+    border-color: white var(--theme) white var(--theme);
+}
+
+article:hover {
+    --theme: orange;
+}
+
 .cold a {
     color: #3eb8b8;
 }
 
 .cold a:hover {
     color: #00ffff;
-}
-
-.cold div label {
-    color: #3eb8b8;
-}
-
-.positions {
-    display: flex;
-    flex-direction: row;
-    border: 4px inset #ffffff;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.positions > div {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.positions > div > div {
-    display: flex;
-    flex-direction: column;
-    border: 4px outset #ffffff;
-}
-
-.positions label {
-    padding: 4px;
-    color: #ffffff;
-    border: 4px inset #ffffff;
-}
-
-.positions span {
-    padding: 8px;
-    color: #ffffff;
-    word-wrap: break-word;
-    border: 4px inset #ffffff;
 }

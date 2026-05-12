@@ -3,7 +3,7 @@
     border: 4px inset #ffffff;
 }
 
-.paragraph {
+p {
     border: 4px inset #ffffff;
     display: flex;
     color: #ffffff;
