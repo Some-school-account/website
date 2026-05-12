@@ -15,16 +15,16 @@ article {
     --theme: #af6e31;
 }
 
-nav {
+article nav {
     transition: border-color ease 1s;
     border-color: white var(--theme) white var(--theme);
 }
 
-nav a {
+article a {
     color: var(--theme);
 }
 
-nav a:hover {
+article a:hover {
     color: var(--theme);
 }
 
@@ -60,4 +60,17 @@ p {
 }
 .udemy nav a:hover {
     --theme: #a635f1;
+}
+
+.codecademy {
+    --theme: #2b3b46;
+}
+.codecademy nav a {
+    --theme: #2b3b46;
+}
+.codecademy:hover {
+    --theme: #244f69;
+}
+.codecademy nav a:hover {
+    --theme: #244f69;
 }

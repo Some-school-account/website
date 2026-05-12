@@ -13,11 +13,15 @@ article {
     flex-direction: column;
     width: 400px;
     border: 4px outset;
+    transition: border-color ease 1s;
+    border-color: white var(--theme) white var(--theme);
+    --theme: #af6e31;
 }
 
 article img {
     border: 4px inset;
     transition: border-color ease 1s;
+    border-color: white var(--theme) white var(--theme);
 }
 
 p {
@@ -25,17 +29,11 @@ p {
     padding: 4px;
     word-wrap: break-word;
     border: 4px inset;
-}
-
-article,
-article img,
-p {
     transition: border-color ease 1s;
-    border-color: white #af6e31 white #af6e31;
+    border-color: white var(--theme) white var(--theme);
 }
 
-article:hover,
-article:hover img,
-article:hover p {
-    border-color: white orange white orange;
+
+article:hover {
+    --theme: orange;
 }

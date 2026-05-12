@@ -5,6 +5,7 @@ main {
     justify-content: space-around;
     padding: 20px;
     gap: 20px;
+    --theme: #af6e31;
 }
 
 article {
@@ -33,14 +34,8 @@ section {
     border-color: white var(--theme) white var(--theme);
 }
 
+
+
 article:hover {
     --theme: orange;
-}
-
-.cold a {
-    color: #3eb8b8;
-}
-
-.cold a:hover {
-    color: #00ffff;
 }

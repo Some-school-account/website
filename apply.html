@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
         <link rel="stylesheet" href="styles/global.css" />
-        <link rel="stylesheet" href="styles/courses.css" />
+        <link rel="stylesheet" href="styles/apply.css" />
         <title>HotBeans Web</title>
     </head>
     <body>
@@ -20,65 +20,56 @@
             <a href="courses.html">Courses</a>
         </nav>
         <main>
-            <article class="w3school">
-                <nav>
-                    <a href="https://www.w3schools.com">
-                        <img
-                            src="https://www.w3schools.com/favicon.ico"
-                            alt="W3School Icon"
-                        />
-                        schools
-                    </a>
-                    <a href="https://www.w3schools.com/html/">Html</a>
-                    <a href="https://www.w3schools.com/css/">CSS</a>
-                    <a href="https://www.w3schools.com/js/">JavaScript</a>
-                </nav>
-                <p>
-                    W3Schools is a excellent source material for learning and
-                    working examples that let anyone learn programming
-                </p>
-            </article>
-            <article class="udemy">
-                <nav>
-                    <a href="https://www.udemy.com">
-                        <img
-                            src="https://frontends.udemycdn.com/frontends-homepage/staticx/udemy/images/v8/favicon-32x32.png"
-                            alt="Udemy Icon"
-                        />
-                        demy
-                    </a>
-                    <a href="https://www.udemy.com/course/the-web-developer-bootcamp/?couponCode=KEEPLEARNING">
-                        Web Developer Bootcamp
-                    </a>
-                    <a href="https://www.udemy.com/course/web-dev-master/">
-                        Web Development Master
-                    </a>
-                    <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">Full-Stack Web Development Bootcamp</a>
-                </nav>
-                <p>
-                    Udemy provides a wide varity of online courses on various
-                    topics including Web development
-                </p>
-            </article>
-            <article class="codecademy">
-                <nav>
-                    <a href="https://www.codecademy.com">
-                        <img
-                            src="https://www.codecademy.com/favicon.ico"
-                            alt="codecademy Icon"
-                        />
-                        decademy
-                    </a>
-                    <a href="https://www.codecademy.com/learn/learn-html">Html</a>
-                    <a href="https://www.codecademy.com/learn/learn-css">CSS</a>
-                    <a href="https://www.codecademy.com/learn/learn-javascr">JavaScript</a>
-                    <a href="https://www.codecademy.com/learn/deploy-a-website">Website Deployment</a>
-                </nav>
-                <p>
-                    Codecademy provides a wide varity of online courses on various
-                    programming languages including Html, Css, JavaScript, and how to deploy a website
-                </p>
-            </article>
+            <form>
+                <section>
+                    <label for="forename">Forename</label>
+                    <input type="text" id="forename" name="forename" />
+                </section>
+
+                <section>
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname" />
+                </section>
+
+                <section>
+                    <label for="date">Date of birth</label>
+                    <input type="date" id="date" name="date" />
+                </section>
+
+                <section>
+                    <label for="address">Address</label>
+                    <input type="address" id="address" name="address" />
+                </section>
+                
+                <section>
+                    <label for="email_address">Email Address</label>
+                    <input type="email" id="email_address" name="email_address" />
+                </section>
+
+                <section>
+                    <label for="phone_number">Phone Number</label>
+                    <input type="number" id="phone_number" name="phone_number" />
+                </section>
+                <section>
+                    <label for="position">Job Position</label>
+                    <select id="position" name="position">
+                        <option value="nil">Select a Job position</option>
+                        <option value="lead">Lead developer - UK</option>
+                        <option value="senior">Senior web developer - UK</option>
+                        <option value="junior">Junior web developer - UK</option>
+                        <option value="apprentice">Apprentice web developer - UK</option>
+                    </select>
+                </section>
+                <div>
+                    <label for="work_reason">Why do you want to work here?</label>
+                    <input type="text" id="work_reason" name="work_reason" />
+                </div>
+                <div>
+                    <label for="work_justification">Why would you be a suitable employee</label>
+                    <input type="text" id="work_justification" name="work_justification" />
+                </div>
+                <button type="submit">Submit </button>
+            </form>
         </main>
     </body>
 </html>
