@@ -10,8 +10,10 @@ main {
 
 article {
     display: flex;
+    width: 300px;
+    max-width: 100%;
+    min-width: 0;
     flex-direction: column;
-    width: 400px;
     border: 4px outset;
     transition: border-color ease 1s;
     border-color: white var(--theme) white var(--theme);
@@ -32,7 +34,6 @@ p {
     transition: border-color ease 1s;
     border-color: white var(--theme) white var(--theme);
 }
-
 
 article:hover {
     --theme: orange;

@@ -34,8 +34,6 @@ section {
     border-color: white var(--theme) white var(--theme);
 }
 
-
-
 article:hover {
     --theme: orange;
 }
