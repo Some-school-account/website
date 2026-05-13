@@ -20,10 +20,6 @@ form:hover {
 
 section {
     display: flex;
-    border: 4px white outset;
-}
-div {
-    display: flex;
     flex-direction: column;
     border: 4px white outset;
 }
@@ -40,6 +36,7 @@ input {
     width: 100%;
     color: white;
     border: 4px white inset;
+    box-sizing: border-box;
 }
 
 select {
