@@ -37,4 +37,5 @@ img {
     color: white;
     box-sizing: border-box;
     margin: 0;
+    overflow-wrap: anywhere;
 }
